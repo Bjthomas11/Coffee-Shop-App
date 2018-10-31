@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore|Open+Sans');
+
+
+:root{
+ --brightYellow:#E3B505;
+ --darkBrown:#BB9457;
+ --yellow:rgb(242, 180, 80); 
+ --brown:#382923;
+ --black:#191919;
+ --grey:#A9B2AC;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
