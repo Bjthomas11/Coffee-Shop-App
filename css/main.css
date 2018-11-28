@@ -153,7 +153,7 @@ nav{
     top: 0;
     left: 0;
     height: 100%;
-    width: 10rem;
+    /* width: 10rem; */
     background: rgba(242, 180, 80, 0.8);
     z-index: 3;
 }
@@ -180,6 +180,16 @@ nav{
 
 .nav_logo:hover{
     background: var(--grey);
+}
+/*  */
+.nav{
+    width: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+.nav-showClass{
+   width: 10rem; 
 }
 
 /* video switch */
@@ -213,7 +223,12 @@ nav{
         background: var(--brown);
         height: 100%;
         width: 50%;
-        border-radius: 0.5rem;;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease-out;
+    }
+
+    .btnSlide{
+        left: 50%;
     }
 
 }
