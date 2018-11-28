@@ -28,6 +28,21 @@ body{
 }
 /* end global */
 
+/* preloader */
+.preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--brightYellow);
+    z-index: 999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+/* end of preloader */
+
 /* header  */
 .header{
     height: 100vh;
@@ -166,6 +181,43 @@ nav{
 .nav_logo:hover{
     background: var(--grey);
 }
+
+/* video switch */
+.video_switch-container{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .video_switch-container{
+        display: block;
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        z-index: 3;
+    }
+    .video_switch{
+        position: relative;
+        width: 5rem;
+        background: var(--yellow);
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.25rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+    }
+    .video_switch-btn{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--brown);
+        height: 100%;
+        width: 50%;
+        border-radius: 0.5rem;;
+    }
+
+}
+
 
 
 
